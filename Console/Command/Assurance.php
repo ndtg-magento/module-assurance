@@ -31,7 +31,7 @@ class Assurance extends \Symfony\Component\Console\Command\Command
     public function __construct(
         \Magento\Framework\ObjectManagerInterface $objectManager,
         \Magento\Framework\App\State $appState,
-        string $name = 'bcsfoodpak:assurance'
+        string $name = 'ntuangiang:assurance'
     )
     {
         $this->_objectManager = $objectManager;
@@ -83,6 +83,7 @@ class Assurance extends \Symfony\Component\Console\Command\Command
 
         $this->setDescription("Use bin/magento bcsfoodpak:assurance --instance='\Vendor\Component' --method='methodName'. Execute a cron and a command by hand.");
         $this->setDefinition($options);
+        $this->setAliases(['ntg:as']);
         parent::configure();
     }
 }
