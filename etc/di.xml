@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © SSTech Bcsfoodpak, Inc. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+
+	<!-- COMMAND JOB -->
+	<type name="Magento\Framework\Console\CommandList">
+		<arguments>
+			<argument name="commands" xsi:type="array">
+				<item name="ntuangiang_assurance_command" xsi:type="object">NTuanGiang\Assurance\Console\Command\Assurance</item>
+			</argument>
+		</arguments>
+	</type>
+
+</config>

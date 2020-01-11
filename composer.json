@@ -1,0 +1,39 @@
+{
+    "name": "ntuangiang/module-assurance",
+    "description": "A Magento 2 module that allows you test command and cron job.",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.1.3||~7.2.0||~7.3.0",
+        "magento/framework": "102.0.*"
+    },
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "NTuanGiang\\Assurance\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Tuan Giang Nguyen",
+            "email": "ntuangiang@outlook.com",
+            "role": "Leader"
+        }
+    ],
+    "keywords": [
+        "magento 2",
+        "magento 2 ntuangiang",
+        "magento ntuangiang",
+        "assurance",
+        "assurance"
+    ],
+    "version": "1.0.0"
+}
