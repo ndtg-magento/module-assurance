@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright © SSTech BcsFoodpak, Inc. All rights reserved.
+ * Copyright © NTuanGiang Assurance, Inc. All rights reserved.
  */
 
 namespace NTuanGiang\Assurance\Console\Command;
