@@ -81,7 +81,7 @@ class Assurance extends \Symfony\Component\Console\Command\Command
             ),
         ];
 
-        $this->setDescription("Use bin/magento bcsfoodpak:assurance --instance='\Vendor\Component' --method='methodName'. Execute a cron and a command by hand.");
+        $this->setDescription("Use bin/magento ntuangiang:assurance --instance='\Vendor\Component' --method='methodName'. Execute a cron and a command by hand.");
         $this->setDefinition($options);
         $this->setAliases(['ntg:as']);
         parent::configure();
