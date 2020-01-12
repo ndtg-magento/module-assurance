@@ -46,6 +46,12 @@ class Assurance extends \Symfony\Component\Console\Command\Command
      */
     public function execute(InputInterface $input, OutputInterface $output)
     {
+        try {
+            $this->_appState->getAreaCode();
+        } catch (\Exception $e) {
+            $this->_appState->setAreaCode(\Magento\Framework\App\Area::AREA_GLOBAL);
+        }
+
         $methodName = $input->getOption(self::METHOD);
         $instanceName = $input->getOption(self::INSTANCE);
         $instance = $this->_objectManager->create($instanceName);
